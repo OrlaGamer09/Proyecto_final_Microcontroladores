@@ -1,80 +1,75 @@
-# Proyecto Final Microcontroladores  
+# Final Project Microcontrollers  
+- [Spanish](./README_es.md) 
 
-> **IMPORTANTE**: Este proyecto nace de la idea de crear una caja con temática navideña, equipada con electrónica, como parte del proyecto final de la asignatura de Microcontroladores (Noviembre 2024).  
+> **IMPORTANT**: This project was born from the idea of creating a Christmas-themed box, equipped with electronics, as part of the final project for the Microcontrollers course (November 2024).  
 
-## Descripción del Proyecto  
-El proyecto consiste en una caja navideña interactiva, controlada mediante un microcontrolador **PIC16F877A**, diseñada para combinar creatividad, electrónica y programación en un solo dispositivo funcional.  
+## Project Description  
+The project consists of an interactive Christmas box, controlled by a **PIC16F877A** microcontroller, designed to combine creativity, electronics, and programming into a single functional device.  
 
-## Roles y Herramientas Utilizadas  
+## Roles and Tools Used  
 
 ### Roles  
-El equipo está compuesto por:  
+The team is composed of:  
 - **Orlando Arroyo**  
 - **María López**  
 - **Andrés Fábregas**  
 
-Todos los integrantes participaron en diversos roles, incluyendo:  
-- Desarrollo de software y hardware.  
-- Gestión de producto.  
+All members participated in various roles, including:  
+- Software and hardware development.  
+- Product management.  
   
 
-### Herramientas  
-- **Notion**: Para la asignación de tareas y el seguimiento del progreso.  
-- **MPLAB X IDE v5.35** y **XC8 v2.5**: Para la programación del microcontrolador.  
-- **Autodesk EAGLE**: Para el diseño del esquema y la PCB.  
+### Tools  
+- **Notion**: For task assignment and progress tracking.  
+- **MPLAB X IDE v5.35** and **XC8 v2.5**: For microcontroller programming.  
+- **Autodesk EAGLE**: For schematic and PCB design.  
 
 
-## Funcionamiento del Sistema
+## System Operation  
 
-Una vez encendido, el sistema despliega un **mensaje navideño inicial** en la pantalla LCD. A partir de este momento, el sensor LDR evalúa las condiciones de luz para determinar si es de día o de noche, activando uno de los siguientes modos:  
+Once powered on, the system displays an **initial Christmas message** on the LCD screen. From this point, the LDR sensor evaluates light conditions to determine if it is day or night, activating one of the following modes:  
 
-### **Modo Noche**  
-- Se enciende una luz decorativa.  
-- Se muestra un mensaje alusivo en la pantalla LCD.  
+### **Night Mode**  
+- A decorative light is turned on.  
+- A themed message is displayed on the LCD screen.  
 
-### **Modo Día**  
-En este modo, el sistema utiliza un sensor ultrasónico para detectar la proximidad de un objeto o persona. Si se detecta presencia, se activan las siguientes funciones:  
-1. **Motor paso a paso**: Hace girar una figura decorativa.  
-2. **Altavoz**: Reproduce una melodía navideña.  
-3. **Tira de LEDs**: Parpadea al ritmo de la música, sincronizada mediante PWM.  
-4. **Pantalla LCD**: Muestra un mensaje relacionado con la actividad en curso.  
-
-
-## Distribución de Recursos del PIC16F877A  
-
-El sistema utiliza los recursos del microcontrolador **PIC16F877A** de la siguiente manera:  
-
-- **Puerto D**: Control de la pantalla LCD (RD0 a RD5 como salidas).  
-- **Puerto B**: Control del motor paso a paso (RB0 a RB3 como salidas).  
-- **Puerto A**: Manejo de sensores:  
-  - **RA0**: Entrada analógica para el sensor LDR.  
-  - **RA1 y RA2**: Control del sensor ultrasónico:  
-    - **RA1 (Trigger)**: Salida.  
-    - **RA2 (Echo)**: Entrada.  
-- **Puerto C**: Control del altavoz y la tira de LEDs.
+### **Day Mode**  
+In this mode, the system uses an ultrasonic sensor to detect the proximity of an object or person. If presence is detected, the following functions are activated:  
+1. **Stepper motor**: Rotates a decorative figure.  
+2. **Speaker**: Plays a Christmas melody.  
+3. **LED strip**: Blinks in sync with the music using PWM.  
+4. **LCD screen**: Displays a message related to the current activity.  
 
 
-## Diseño del Esquemático y PCB  
+## PIC16F877A Resource Allocation  
 
-Utilizando **Autodesk EAGLE**, diseñamos tanto el esquemático como la PCB del sistema. Estos diseños pueden visualizarse en las imágenes disponibles en la carpeta `img`:  
-- **Esquemático**: ![Esquemático](./img/esquematico.jpeg)  
+The system utilizes the resources of the **PIC16F877A** microcontroller as follows:  
+
+- **Port D**: Controls the LCD screen (RD0 to RD5 as outputs).  
+- **Port B**: Controls the stepper motor (RB0 to RB3 as outputs).  
+- **Port A**: Manages the sensors:  
+  - **RA0**: Analog input for the LDR sensor.  
+  - **RA1 and RA2**: Controls the ultrasonic sensor:  
+    - **RA1 (Trigger)**: Output.  
+    - **RA2 (Echo)**: Input.  
+- **Port C**: Controls the speaker and LED strip.
+
+
+## Schematic and PCB Design  
+
+Using **Autodesk EAGLE**, we designed both the schematic and the system's PCB. These designs can be viewed in the images available in the `img` folder:  
+- **Schematic**: ![Schematic](./img/esquematico.jpeg)  
 - **PCB**: ![PCB](./img/pcb.jpeg)
 
 
-## Circuito Final del Sistema  
+## Final Circuit of the System  
 
-Luego de soldar todos los componentes en la PCB, este es el resultado final del circuito, ensamblado dentro de la caja:  
-- **Circuito PCB**: ![Circuito Final](./img/circuito_final.jpeg)  
-
-
-## Resultado Final  
-
-Tras decorar la caja con un estilo navideño, este fue el resultado final del proyecto:  
-- **Foto del Proyecto Final**: ![Resultado Final](./img/P_final.jpeg)  
-- **Video del Funcionamiento**: [Ver Video](./img/resultado_final.mp4)  
+After soldering all the components onto the PCB, this is the final result of the circuit, assembled inside the box:  
+- **PCB Circuit**: ![Final Circuit](./img/circuito_final.jpeg)  
 
 
+## Final Result  
 
-
-
-
+After decorating the box with a Christmas style, this was the final result of the project:  
+- **Photo of the Final Project**: ![Final Result](./img/P_final.jpeg)  
+- **Functionality Video**: [Watch Video](./img/resultado_final.mp4)  
