@@ -71,7 +71,7 @@ Luego de soldar todos los componentes en la PCB, este es el resultado final del 
 
 Tras decorar la caja con un estilo navideño, este fue el resultado final del proyecto:  
 - **Foto del Proyecto Final**: ![Resultado Final](./img/P_final.jpeg)  
-- **Video del Funcionamiento**: [Ver Video](./img/resultado_final.mp3)  
+- **Video del Funcionamiento**: [Ver Video](./img/resultado_final.mp4)  
 
 
 
