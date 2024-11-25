@@ -298,7 +298,7 @@ void run_lcd() {
 
 
     //LEDs PWM
-// Función para controlar el duty cycle en subida y bajada
+// Función para controlar el duty cycle en subida y bajada (No usada en el codigo principal)
 void Pwm_Leds() {
     PR2 = 255;            // Configura el periodo del PWM (valor máximo de 8 bits)
     static unsigned char dutyCycle = 0; // Variable para controlar el duty cycle
