@@ -2077,7 +2077,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="15" x="5.08" y="170.18" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="73.66" y="72.644" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="POWER_STEP_MOTOR" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP1" package3d_urn="urn:adsk.eagle:package:15455/1" value="" x="76.2" y="68.58" smashed="yes" rot="R270">
+<element name="ALIMENTACION_STEP_MOTOR" library="jumper" library_urn="urn:adsk.eagle:library:252" package="JP1" package3d_urn="urn:adsk.eagle:package:15455/1" value="" x="76.2" y="68.58" smashed="yes" rot="R270">
 <attribute name="NAME" x="73.66" y="70.231" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="61" x="33.02" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="73.66" y="65.659" size="1.27" layer="27" ratio="10"/>
@@ -2163,7 +2163,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="97.79" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="97.3074" y="38.4556" size="0.9906" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R_LEDS4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="330" x="95.25" y="36.83" smashed="yes" rot="R270">
+<element name="R_LEDS4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="" x="95.25" y="36.83" smashed="yes" rot="R270">
 <attribute name="NAME" x="96.5454" y="39.37" size="0.9906" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="79" x="95.25" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="95.25" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2183,7 +2183,7 @@ design rules under a new name.</description>
 <contactref element="DISPLAY_LCD" pad="5"/>
 <contactref element="DISPLAY_LCD" pad="16"/>
 <contactref element="TRIMMER_LCD" pad="3"/>
-<contactref element="POWER_STEP_MOTOR" pad="2"/>
+<contactref element="ALIMENTACION_STEP_MOTOR" pad="2"/>
 <contactref element="BUZZER" pad="-"/>
 <contactref element="DC-IN" pad="2"/>
 <contactref element="DC-IN" pad="3"/>
@@ -2229,7 +2229,7 @@ design rules under a new name.</description>
 <contactref element="ULTRASONIC" pad="VCC"/>
 <contactref element="DISPLAY_LCD" pad="2"/>
 <contactref element="TRIMMER_LCD" pad="1"/>
-<contactref element="POWER_STEP_MOTOR" pad="1"/>
+<contactref element="ALIMENTACION_STEP_MOTOR" pad="1"/>
 <contactref element="DC-IN" pad="1"/>
 <contactref element="ALIMENTACION_PICKIT" pad="1"/>
 <wire x1="80.01" y1="48.26" x2="80.01" y2="44.45" width="1.524" layer="16"/>
